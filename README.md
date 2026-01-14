@@ -21,7 +21,7 @@ O objetivo é **produtividade**, **padrão** e **menos erro humano**, sem escond
 ```text
 src/main/java/seu/pacote/base
 │
-├─ SeuPlugin.java
+├─ Main.java
 │
 ├─ commands/
 │   └─ SeusComandos.java
@@ -60,7 +60,7 @@ protected void setup() {
 
     Set<Class<?>> classes = ClassScanner.scan(
         pluginClassLoader,
-        "dev.hytalemodding" // package base
+        "dev.yodaylay22" // package base
     );
 
     CommandAutoRegistrar.register(this, classes);
