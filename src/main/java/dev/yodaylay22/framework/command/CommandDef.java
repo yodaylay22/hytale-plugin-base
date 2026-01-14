@@ -1,0 +1,11 @@
+package dev.yodaylay22.framework.command;
+
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+
+@Retention(RetentionPolicy.RUNTIME)
+public @interface CommandDef {
+    String name();
+
+    String description() default "";
+}
